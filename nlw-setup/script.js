@@ -9,7 +9,7 @@ function add() {
 const today = new Date().toLocaleDateString("pt-br").slice(0, -5) // no click puxa o dia de hoje
 const dayExists = nlwSetup.dayExists(today)
 
-if(dayExists) { // alerta para o usuario de dia incluso(boolean)
+if(dayExists) {  //alerta para o usuario dia incluso(boolean) - condiconal, logica de programação
   alert("Dia já incluso 🔴")
   return
 } 
@@ -19,7 +19,7 @@ alert('Adicionado com sucesso ✅')
 }
 
 function save() { //transformando o objeto em texto
-  localStorage.setItem('NLWSetup@habitsDays', JSON.stringify(nlwSetup.data)) 
+  localStorage.setItem('NLWSetup@habitsDays', JSON.stringify(nlwSetup.data)) //guarda informaçoes
   
 }
 
