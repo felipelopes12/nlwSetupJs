@@ -27,3 +27,4 @@ function save() { //transformando o objeto em texto
 const data = JSON.parse(localStorage.getItem('NLWSetup@habitsDays')) || {}
  nlwSetup.setData(data)
  nlwSetup.load()
+
