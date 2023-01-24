@@ -23,8 +23,14 @@ function save() { //transformando o objeto em texto
   
 }
 
+ function Text() {
+  form.addEventListener('mouseover', text)
+}
+
   //transformando o texto em objeto
 const data = JSON.parse(localStorage.getItem('NLWSetup@habitsDays')) || {}
  nlwSetup.setData(data)
  nlwSetup.load()
+
+ 
 
